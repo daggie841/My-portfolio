@@ -5,17 +5,18 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   const quickLinks = [
-    { name: "About", href: "#about" },
-    { name: "Portfolio", href: "#portfolio" },
-    { name: "Services", href: "#services" },
+    { name: "About Us", href: "#about" },
+    { name: "Curriculum", href: "#curriculum" },
+    { name: "Activities", href: "#activities" },
+    { name: "Boarding", href: "#boarding" },
     { name: "Contact", href: "#contact" }
   ];
 
-  const services = [
-    { name: "Web Development", href: "#services" },
-    { name: "UI/UX Design", href: "#services" },
-    { name: "Brand Identity", href: "#services" },
-    { name: "Full-Stack Development", href: "#services" }
+  const academics = [
+    { name: "Mathematics", href: "#curriculum" },
+    { name: "Sciences", href: "#curriculum" },
+    { name: "Languages", href: "#curriculum" },
+    { name: "Social Studies", href: "#curriculum" }
   ];
 
   const scrollToSection = (sectionId: string) => {
@@ -35,31 +36,25 @@ const Footer = () => {
           {/* Brand section */}
           <div className="lg:col-span-2">
             <h3 className="text-2xl font-bold bg-gradient-primary bg-clip-text text-transparent mb-4">
-              Your Portfolio
+              Mpeketoni Boys' High School
             </h3>
             <p className="text-muted-foreground mb-6 max-w-md">
-              Crafting beautiful digital experiences that bridge the gap between design and development. 
-              Let's create something amazing together.
+              Excellence in Education, Character Development, and Holistic Growth. 
+              Preparing young minds for tomorrow's challenges with quality education and moral values.
             </p>
-            <div className="flex space-x-4">
-              <a 
-                href="https://github.com" 
-                className="p-3 rounded-full bg-background hover:bg-accent transition-colors shadow-elegant hover:shadow-glow"
-              >
-                <Github className="w-5 h-5 text-foreground" />
-              </a>
-              <a 
-                href="https://linkedin.com" 
-                className="p-3 rounded-full bg-background hover:bg-accent transition-colors shadow-elegant hover:shadow-glow"
-              >
-                <Linkedin className="w-5 h-5 text-foreground" />
-              </a>
-              <a 
-                href="mailto:hello@yourname.com" 
-                className="p-3 rounded-full bg-background hover:bg-accent transition-colors shadow-elegant hover:shadow-glow"
-              >
-                <Mail className="w-5 h-5 text-foreground" />
-              </a>
+            <div className="space-y-2 text-sm text-muted-foreground">
+              <div className="flex items-center gap-2">
+                <Mail className="w-4 h-4" />
+                <span>info@mpeketoniboys.ac.ke</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <span>📞</span>
+                <span>+254 700 123 456</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <span>📍</span>
+                <span>Mpeketoni, Lamu County</span>
+              </div>
             </div>
           </div>
 
@@ -80,17 +75,17 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Services */}
+          {/* Academics */}
           <div>
-            <h4 className="font-semibold text-foreground mb-4">Services</h4>
+            <h4 className="font-semibold text-foreground mb-4">Academics</h4>
             <ul className="space-y-2">
-              {services.map((service) => (
-                <li key={service.name}>
+              {academics.map((subject) => (
+                <li key={subject.name}>
                   <button
-                    onClick={() => scrollToSection(service.href)}
+                    onClick={() => scrollToSection(subject.href)}
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
-                    {service.name}
+                    {subject.name}
                   </button>
                 </li>
               ))}
@@ -102,10 +97,10 @@ const Footer = () => {
         <div className="py-8 border-t border-border">
           <div className="bg-gradient-primary p-8 rounded-lg text-center text-primary-foreground">
             <h3 className="text-2xl font-bold mb-4">
-              Ready to Start Your Project?
+              Ready to Join Our School?
             </h3>
             <p className="text-lg mb-6 opacity-90">
-              Let's discuss how we can bring your vision to life with exceptional design and development.
+              Begin your educational journey with us. Contact our admissions office for more information.
             </p>
             <Button 
               variant="secondary" 
@@ -113,7 +108,7 @@ const Footer = () => {
               onClick={() => scrollToSection('#contact')}
               className="group"
             >
-              Get Started Today
+              Apply Today
               <ExternalLink className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </Button>
           </div>
@@ -123,9 +118,7 @@ const Footer = () => {
         <div className="py-6 border-t border-border">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="flex items-center space-x-2 text-muted-foreground">
-              <span>© {currentYear} Your Name. Made with</span>
-              <Heart className="w-4 h-4 fill-current text-red-500" />
-              <span>and lots of coffee.</span>
+              <span>© {currentYear} Mpeketoni Boys' High School. All rights reserved.</span>
             </div>
             
             <div className="flex items-center space-x-6 text-sm text-muted-foreground">
@@ -136,13 +129,7 @@ const Footer = () => {
                 Back to Top ↑
               </button>
               <span>•</span>
-              <a href="#privacy" className="hover:text-primary transition-colors">
-                Privacy Policy
-              </a>
-              <span>•</span>
-              <a href="#terms" className="hover:text-primary transition-colors">
-                Terms of Service
-              </a>
+              <span>Empowering Excellence Since 1995</span>
             </div>
           </div>
         </div>

@@ -19,14 +19,14 @@ const Hero = () => {
         <div className="text-center max-w-4xl mx-auto">
           <div className="mb-8 animate-fade-in">
             <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-primary bg-clip-text text-transparent">
-              Full-Stack Developer
+              Welcome to
             </h1>
             <h2 className="text-3xl md:text-5xl font-bold mb-6 text-foreground">
-              & Creative Designer
+              Mpeketoni Boys' High School
             </h2>
             <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-              I craft beautiful digital experiences that bridge the gap between design and development, 
-              creating solutions that are both visually stunning and technically robust.
+              Excellence in Education, Character Development, and Holistic Growth. 
+              Preparing young minds for tomorrow's challenges with quality education and moral values.
             </p>
           </div>
 
@@ -34,10 +34,10 @@ const Hero = () => {
             <Button 
               variant="hero" 
               size="xl"
-              onClick={() => scrollToSection('portfolio')}
+              onClick={() => scrollToSection('about')}
               className="group"
             >
-              View My Work
+              Learn More
               <ArrowDown className="w-5 h-5 group-hover:translate-y-1 transition-transform" />
             </Button>
             <Button 
@@ -45,7 +45,7 @@ const Hero = () => {
               size="xl"
               onClick={() => scrollToSection('contact')}
             >
-              Get In Touch
+              Contact Us
             </Button>
           </div>
 

@@ -38,26 +38,26 @@ const Contact = () => {
     {
       icon: Mail,
       title: "Email",
-      value: "hello@yourname.com",
-      description: "Drop me a line anytime"
+      value: "info@mpeketoniboys.ac.ke",
+      description: "Send us your inquiries anytime"
     },
     {
       icon: Phone,
       title: "Phone",
-      value: "+1 (555) 123-4567",
-      description: "Available during business hours"
+      value: "+254 700 123 456",
+      description: "Mon-Fri from 8am to 5pm"
     },
     {
       icon: MapPin,
       title: "Location",
-      value: "San Francisco, CA",
-      description: "Available for remote work worldwide"
+      value: "Mpeketoni, Lamu County",
+      description: "Along Mpeketoni-Mokowe Road"
     },
     {
       icon: Calendar,
-      title: "Response Time",
-      value: "< 24 hours",
-      description: "I always respond quickly"
+      title: "Admissions",
+      value: "Open for Form 1",
+      description: "Application deadline: December 2024"
     }
   ];
 
@@ -65,13 +65,12 @@ const Contact = () => {
     <section id="contact" className="py-20 bg-gradient-secondary">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
-            Let's Work Together
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-primary bg-clip-text text-transparent">
+            Contact Us
           </h2>
-          <div className="w-20 h-1 bg-gradient-primary mx-auto mb-8"></div>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Have a project in mind? I'd love to hear about it. Let's discuss how we can 
-            bring your vision to life with beautiful design and robust development.
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+            Get in touch with us for admissions, inquiries, or to learn more about 
+            Mpeketoni Boys' High School. We're here to help you join our community.
           </p>
         </div>
 
@@ -100,11 +99,11 @@ const Contact = () => {
             ))}
 
             <div className="pt-6">
-              <h4 className="font-semibold text-foreground mb-4">Project Budget Range</h4>
+              <h4 className="font-semibold text-foreground mb-4">School Fees Information</h4>
               <div className="space-y-2 text-muted-foreground">
-                <p>• Web Development: $2,500 - $15,000+</p>
-                <p>• Design Projects: $1,200 - $8,000+</p>
-                <p>• Full Solutions: $5,000 - $25,000+</p>
+                <p>• Day Scholar: Ksh 45,000 per year</p>
+                <p>• Boarder: Ksh 85,000 per year</p>
+                <p>• Contact us for payment plans</p>
               </div>
             </div>
           </div>
@@ -113,7 +112,7 @@ const Contact = () => {
           <div className="lg:col-span-2">
             <Card className="shadow-glow">
               <CardHeader>
-                <CardTitle className="text-2xl">Send a Message</CardTitle>
+                <CardTitle className="text-2xl">Send Us a Message</CardTitle>
               </CardHeader>
               <CardContent>
                 <form onSubmit={handleSubmit} className="space-y-6">
@@ -151,28 +150,28 @@ const Contact = () => {
 
                   <div>
                     <label htmlFor="subject" className="block text-sm font-medium text-foreground mb-2">
-                      Project Type
+                      Subject
                     </label>
                     <Input
                       id="subject"
                       name="subject"
                       value={formData.subject}
                       onChange={handleChange}
-                      placeholder="e.g., Website Development, Brand Design, etc."
+                      placeholder="e.g., Admissions Inquiry, General Information, etc."
                       className="transition-all duration-300 focus:shadow-glow"
                     />
                   </div>
 
                   <div>
                     <label htmlFor="message" className="block text-sm font-medium text-foreground mb-2">
-                      Project Details *
+                      Message *
                     </label>
                     <Textarea
                       id="message"
                       name="message"
                       value={formData.message}
                       onChange={handleChange}
-                      placeholder="Tell me about your project, timeline, budget, and any specific requirements..."
+                      placeholder="Your message or inquiry..."
                       rows={6}
                       required
                       className="transition-all duration-300 focus:shadow-glow"
@@ -192,8 +191,8 @@ const Contact = () => {
 
                 <div className="mt-6 p-4 bg-muted/50 rounded-lg">
                   <p className="text-sm text-muted-foreground">
-                    <strong>What happens next?</strong> I'll review your message and respond within 24 hours 
-                    with follow-up questions and next steps. For urgent inquiries, feel free to call directly.
+                    <strong>What happens next?</strong> We'll review your message and respond within 24 hours 
+                    with the information you need. For urgent inquiries, feel free to call our office directly.
                   </p>
                 </div>
               </CardContent>

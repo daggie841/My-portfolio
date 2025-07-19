@@ -23,8 +23,9 @@ const Navigation = () => {
 
   const navItems = [
     { name: "About", href: "about" },
-    { name: "Portfolio", href: "portfolio" },
-    { name: "Services", href: "services" },
+    { name: "Curriculum", href: "curriculum" },
+    { name: "Activities", href: "activities" },
+    { name: "Boarding", href: "boarding" },
     { name: "Contact", href: "contact" }
   ];
 
@@ -41,7 +42,7 @@ const Navigation = () => {
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
             className="text-2xl font-bold bg-gradient-primary bg-clip-text text-transparent hover:opacity-80 transition-opacity"
           >
-            Portfolio
+            MBHS
           </button>
 
           {/* Desktop Navigation */}
@@ -61,7 +62,7 @@ const Navigation = () => {
               onClick={() => scrollToSection('contact')}
               className="ml-4"
             >
-              Let's Talk
+              Admissions
             </Button>
           </div>
 
@@ -92,7 +93,7 @@ const Navigation = () => {
                 onClick={() => scrollToSection('contact')}
                 className="w-full mt-4"
               >
-                Let's Talk
+                Admissions
               </Button>
             </div>
           </div>
